@@ -1,0 +1,28 @@
+DATASET:
+  NAME: "BRCA"
+  NUM_CLASSES: 5
+  CLASS_NAMES: [ "Normal-like", "Luminal A", "Luminal B", "Basal-like", "HER2-enriched" ]
+  SPARSITY_RATES: 0.6
+
+ENCODER:
+  HID_DIMS: 128
+  DROPOUT_RATE: 0.1
+
+ATTENTION:
+  NUM_HEADS: 2
+
+DECODER:
+  HID_DIMS: 128
+  NUM_LAYERS: 2
+  DROPOUT_RATE: 0.1
+  NEGATIVE_SLOPE: 0.2
+
+SOLVER:
+  LR: 0.00032
+  WD: 0.001
+
+COMET:
+  PROJECT_NAME: "magnet_brca"
+
+TUNE:
+  METRIC: "val_acc"

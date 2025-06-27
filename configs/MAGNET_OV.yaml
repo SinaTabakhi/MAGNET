@@ -1,0 +1,28 @@
+DATASET:
+  NAME: "OV"
+  NUM_CLASSES: 2
+  CLASS_NAMES: [ "Short-term survivors", "Long-term survivors" ]
+  SPARSITY_RATES: 0.8
+
+ENCODER:
+  HID_DIMS: 256
+  DROPOUT_RATE: 0.2
+
+ATTENTION:
+  NUM_HEADS: 8
+
+DECODER:
+  HID_DIMS: 256
+  NUM_LAYERS: 2
+  DROPOUT_RATE: 0.2
+  NEGATIVE_SLOPE: 0.2
+
+SOLVER:
+  LR: 0.000212
+  WD: 0.001
+
+COMET:
+  PROJECT_NAME: "magnet_ov"
+
+TUNE:
+  METRIC: "val_acc"
