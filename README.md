@@ -6,7 +6,7 @@ This repository provides the Python implementation of the <ins>M</ins>issing-mod
 ## Architecture
 The following provides an overview of the MAGNET architecture.
 
-![MAGNET](image/magnet.svg)
+![MAGNET](image/magnet.svg?v=1)
 
 ## Local Environment Setup
 MAGNET is implemented in Python 3.10 and is supported on both Linux and Windows. It should work on any operating system that supports Python. The implementation has been tested on both GPU and CPU machines. We suggest setting up the MAGNET environment using Conda. Clone the repository and create a new Conda virtual environment with the command below.
